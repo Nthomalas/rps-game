@@ -49,33 +49,33 @@ while True:
         counter2 += 5
         print("\033[32m", "Snip snip! Player 2 wins with ✂️ over 📃 +5 pts!", "\033[0m")
         print()
-        print("\033[33m"," The score is now Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
+        print(" The score is now Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
 
 #PAPER/PAPER
     elif player1 == ("paper") and player2 == ("paper"):
         print("\033[32m", "Page on page, call it a standstill 😕. Both players choose 📃", "\033[0m")
         print()
-        print("\033[33m","The score remains Player 1:","\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m",counter2, "\033[0m")
+        print("The score remains Player 1:","\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m",counter2, "\033[0m")
 
 #PAPER/ROCK
     elif player1 == ("scissors") and player2 == ("rock"):
         counter2 += 5
         print("\033[32m", "Cliff vs Cutlery - CLIFF WINS. Player 2 wins with 🪨 over ✂️ +5pts", "\033[0m")
         print()
-        print("\033[33m"," The score is now Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
+        print(" The score is now Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
 
 #SCISSORS/PAPER        
     elif player1 == ("scissors") and player2 == ("paper"):
         counter1+= 5
         print("\033[32m", "Blade beats blank page! Player 1 wins with ✂️ over 📃 +5pts!", "\033[0m")
         print()
-        print("\033[33m"," The score is now Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
+        print(" The score is now Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
 
  #SCISSORS/SCISSORS  
     elif player1 == ("scissors") and player2 == ("scissors"):
         print("\033[32m", "Iron sharpens iron. Total stalemate 😕. Both players chose ✂️", "\033[0m")
         print()
-        print("\033[33m","The score remains Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
+        print("The score remains Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
     
     else:
         print("\033[31m""Invalid user input, must be [rock], [paper] or [scissors]", "\033[0m")
@@ -84,12 +84,12 @@ while True:
 #GAME SCORE CALCULATIONS
     playAgain = input("Play Again (yes/no)?:  ").strip().lower()
     print()
-    if playAgain == "no" or "n":
-     print("GAME OVER! Final Score - Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:",  "\033[35m", counter2, "\033[0m")
-    if counter1 > counter2:
-        print("\033[32m"," PLAYER 1 WINS!", "\033[0m")
-    elif counter1 < counter2:
-        print("\033[32m", "PLAYER 2 WINS!", "\033[0m")
-    elif counter1 == counter2:
-        print("\033[32m", "TOTAL STALEMATE 😕", "\033[0m")
+    if playAgain != "yes":
+        print("GAME OVER! Final Score - Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:",  "\033[35m", counter2, "\033[0m")
+        if counter1 > counter2:
+            print("\033[32m"," PLAYER 1 WINS!", "\033[0m")
+        elif counter1 < counter2:
+            print("\033[32m", "PLAYER 2 WINS!", "\033[0m")
+        else:
+            print("\033[32m", "TOTAL STALEMATE 😕", "\033[0m")
         break
