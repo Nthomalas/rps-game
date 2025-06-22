@@ -43,4 +43,3 @@ After each round, view the current score and choose whether to play again.
 
 Type no when asked Play Again (yes/no)? to end the game and see the final results.
 
-READY?
