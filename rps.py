@@ -78,7 +78,7 @@ while True:
         print("The score remains Player 1:", "\033[35m", counter1, "\033[0m", "Player 2:", "\033[35m", counter2, "\033[0m")
     
     else:
-        print("\033[31m""Invalid user input, must be [rock], [paper] or [scissors]", "\033[0m")
+        print("\033[31m", "Invalid user input, must be [rock], [paper] or [scissors]", "\033[0m")
     print()
 
 #GAME SCORE CALCULATIONS
